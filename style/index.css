@@ -1,0 +1,140 @@
+@import url('http://fonts.cdnfonts.com/css/bobloxclassic');
+                
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: rgb(99, 179, 33);
+    --color-box: rgb(170, 168, 32);
+    --color-text: #000;
+    --color-accent: rgb(165, 69, 14);
+
+    --color-box-bg: 170, 168, 32;
+    --color-accent-bg: 165, 69, 14;
+    --color-text-lel: 0, 0, 0;
+    --color-primary-lel: 99, 179, 33;
+    --color-primary-prime: 111, 179, 33;
+}
+
+body{
+    font-family: 'BobloxClassic', sans-serif;
+    background: linear-gradient(
+        to right top,
+        rgba(var(--color-primary-lel),0.8),
+        rgba(var(--color-primary-prime),0.8)),
+        url(../images/game-background.jfif);
+}
+.root{
+    display: grid;
+    place-items: center;
+    height: 60vh;
+    width: auto;
+    background: linear-gradient( to bottom left,
+        rgba(var(--color-accent-bg), 0.8),
+        rgba(var(--color-box-bg), 0.8)),
+        url(../images/R.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 7rem 7rem;
+    animation: beUp 5s infinite 0.5s ease-in-out;
+    animation-play-state: running;
+    transition: transform;
+    border-radius: 0.6rem;
+}
+
+@keyframes beUp{
+    0%{
+        box-shadow: -0.7rem 0.5rem 0.5rem  rgba(var(--color-text-lel), 0.5);
+        transform: translate(0.5rem, -0.5rem);
+    }
+    20%{
+        box-shadow: 0.7rem 0 0.5rem  rgba(var(--color-text-lel), 0.5);
+        transform: translate(-0.5rem, 0.5rem);
+    }
+    60%{
+        box-shadow: -0.7rem 0.5rem 0.5rem  rgba(var(--color-text-lel), 0.5);
+        transform: translate(0.5rem, -0.5rem);
+    }
+    80%{
+        box-shadow: 0.7rem -0.5rem 0.5rem  rgba(var(--color-text-lel), 0.5);
+        transform: translate(-0.5rem, 0.5rem);
+    }
+    100%{
+        box-shadow: -0.7rem 0.5rem 0.5rem  rgba(var(--color-text-lel), 0.5);
+        transform: translate(0);
+    }
+    0%{
+        box-shadow: -0.7rem 0.5rem 0.5rem  rgba(var(--color-text-lel), 0.5);
+        transform: translate(0);
+    }
+}
+
+.plain{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+
+.game{
+    border: 0.5rem solid var(--color-text);
+    padding: 2rem 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* .game-player{ border: 0.5rem solid var(--color-primary);}
+.game-computer{ border: 0.5rem solid var(--color-accent);} */
+
+#btn{
+    padding: 2rem 2rem;
+    margin: 0 0 3rem 2rem;
+    border-radius: 0.3rem;
+    outline: none;
+    cursor: pointer;
+    font-family: 'BobloxClassic', sans-serif;
+    border: none;
+    transition: transform 0.5s;
+}
+#btn:hover{
+    transform: translate(0.2rem, -0.2rem);
+    box-shadow: -0.3rem 0.3rem 0.8rem rgba(var(--color-text-lel), 0.5);
+}
+
+.rock{
+    background: linear-gradient(
+        to right bottom,
+        rgba(var(--color-accent-bg),0.8),
+        rgba(var(--color-primary-lel),0.8)),
+        url(../images/rock.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paper{
+    background: linear-gradient(
+        to right bottom,
+        rgba(var(--color-text-lel),0.8),
+        rgba(var(--color-primary-lel),0.8)),
+        url(../images/paper.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scissors{
+    background: linear-gradient(
+        to right bottom,
+        rgba(var(--color-box-bg),0.8),
+        rgba(var(--color-text-lel),0.8)),
+        url(../images/scissors.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
