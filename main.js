@@ -92,22 +92,3 @@ function check_winner() {
     return false;
 
 }
-
-// game border to change color on action
-// var game = getElementById('game');
-// function border_change (){
-//     if( player_score++ ){
-//         game.classList.add('game-player');
-//         game.classList.remove('game');
-//     }
-    
-//     if(computer_score++){
-//         game.classList.add('game-computer');
-//         game.classList.remove('game');
-//     }
-
-//     else{
-//         game.classList.add('game');
-//         game.classList.remove('game-player, game-computer');
-//     }
-// }
